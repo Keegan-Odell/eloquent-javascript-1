@@ -27,4 +27,31 @@ function fizz_buzz() {
 	}
 }
 
-fizz_buzz()
+// fizz_buzz()
+
+// Write a prgram that creates a string that represents an 4xNum grid, using newline characters to separate lines.
+// At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
+// Passing this string to console.log should show something like this:
+// # # # #
+//  # # # #
+// # # # #
+//  # # # #
+// # # # #
+//  # # # #
+// # # # #
+//  # # # #
+// Once you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
+function chess_board(num) {
+  counter_even = ' # # # #'
+  counter_odd = '# # # #'
+  
+  for(let i = 0; i < num; i++) {
+    if (i % 2 === 0) {
+      console.log(counter_even);
+    } else {
+      console.log(counter_odd);
+    }
+  }
+}
+
+chess_board(16)
